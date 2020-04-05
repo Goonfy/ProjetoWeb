@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Length Converter</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="measures">
+                <select id="from_lengthmeasure">
+                    <option value="KM" selected>Kilometers</option>
+                    <option value="HM">Hectometers</option>
+                    <option value="DAM">Dekameters</option>
+                    <option value="M">Meters</option>
+                    <option value="DM">Decimeters</option>
+                    <option value="CM">Centimeters</option>
+                    <option value="MM">Milimeters</option>
+                    <option value="MI">Miles</option>
+                    <option value="FT">Feet</option>
+                    <option value="IN">Inches</option>
+                    <option value="YA">Yards</option>
+                </select>
+                <input type="number" id="from_ammount" placeholder="0" value=1 />
+            </div>
+            <div class="middle">
+                <button id="exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                <div class="rate" id="rate"></div>
+            </div>
+            <div class="measures">
+                <select id="to_lengthmeasure">
+                    <option value="KM" selected>Kilometers</option>
+                    <option value="HM">Hectometers</option>
+                    <option value="DAM">Dekameters</option>
+                    <option value="M">Meters</option>
+                    <option value="DM">Decimeters</option>
+                    <option value="CM">Centimeters</option>
+                    <option value="MM">Milimeters</option>
+                    <option value="MI">Miles</option>
+                    <option value="FT">Feet</option>
+                    <option value="IN">Inches</option>
+                    <option value="YA">Yards</option>
+                </select>
+                <input type="number" id="to_ammount" placeholder="0" />
+            </div>
+        </div>
+        <script src="function.js"></script>
+    </body>
+
+</html>
