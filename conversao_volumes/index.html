@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Time Converter</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="time">
+                <select id="from_volume">
+                    <option value="L" selected>Liter</option>
+                    <option value="DL">Deciliter</option>
+                    <option value="CL">Centiliter</option>
+                    <option value="ML">Mililiter</option>
+                </select>
+                <input type="number" id="from_ammount" placeholder="0" value=1 />
+            </div>
+            <div class="middle">
+                <button id="exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                <div class="rate" id="rate"></div>
+            </div>
+            <div class="time">
+                <select id="to_time">
+                    <option value="L" selected>Liter</option>
+                    <option value="DL">Deciliter</option>
+                    <option value="CL">Centiliter</option>
+                    <option value="ML">Mililiter</option>
+                </select>
+                <input type="number" id="to_ammount" placeholder="0" />
+            </div>
+        </div>
+        <script src="function.js"></script>
+    </body>
+
+</html>

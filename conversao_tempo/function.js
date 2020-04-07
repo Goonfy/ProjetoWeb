@@ -10,7 +10,7 @@ from_ammountEl.addEventListener('input', calculate);
 to_timeEl.addEventListener('change', calculate);
 to_ammountEl.addEventListener('input', calculate);
 
-var lengthlist = ({
+var timelist = ({
   H: ({H: 1, M: 60, S: 3600, MS: 3600000}),
   M: ({H: 0.0166666667, M: 1, S: 60, MS: 60000}),
   S: ({H: 0.000277777778, M: 0.0166666667, S: 1, MS: 1000}),
@@ -29,8 +29,8 @@ function calculate() {
   const from_time = from_timeEl.value;
   const to_time = to_timeEl.value;
 
-  rateEl.innerText = `1 ${from_time} = ${lengthlist[from_time][to_time]} ${to_time}`
-  to_ammountEl.value = (from_ammountEl.value * lengthlist[from_time][to_time]);
+  rateEl.innerText = `1 ${from_time} = ${timelist[from_time][to_time]} ${to_time}`
+  to_ammountEl.value = (from_ammountEl.value * timelist[from_time][to_time]);
 }
  
 calculate();
